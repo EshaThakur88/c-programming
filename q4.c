@@ -3,12 +3,15 @@
 int main()
 {
     int n;
-    printf("Enter the number from which you want to follow reverse order for printing first n natural numbers: ");
+    printf("Enter the number of which you want the multiplication table:");
     scanf("%d", &n);
 
-    for (int i = n; i; i--)
+    printf("multiplication table for %d is: \n", n);
+    for (int i = 1; i < 11; i++)
     {
-        printf("%d\n", i);
+        printf("%d X %d = %d\n", n, i, n * i);
     }
+
+
     return 0;
 }
