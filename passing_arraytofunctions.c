@@ -1,9 +1,17 @@
 #include<stdio.h>
 
-void passingarray(int *ptr, int n){
+// void passingarray(int *ptr, int n){
+//     for (int i = 0; i < 6; i++)
+//     {
+//         printf("The %d element of array is %d.\n", i+1, *(ptr+i));
+//     }
+    
+// }
+
+void passingarray(int ptr[], int n){
     for (int i = 0; i < 6; i++)
     {
-        printf("The %d element of array is %d.\n", i+1, *(ptr+i));
+        printf("The %d element of array is %d.\n", i+1, ptr[i]);
     }
     
 }
